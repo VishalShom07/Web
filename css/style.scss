@@ -1,0 +1,164 @@
+@font-face {
+    font-family: 'poppinsregular';
+    src: url('../fonts/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: 'poppinsregular';
+}
+
+.top-bar {
+    .container {
+        padding: 4rem;
+        .logo {
+            display: inline-block;
+            img {
+                width: 350px;
+            }
+        }
+        nav {
+            float: right;
+            ul {
+                padding: 0;
+                margin: 30px 0px 0px 0px;
+                li {
+                    display: inline-block;
+                    margin-left: 60px;
+                    position: relative;
+                    height: 40px;
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+                        position: relative;
+                        padding: 10px;
+                        &::before {
+                            position: absolute;
+                            content: "";
+                            left: 0;
+                            bottom: 0px;
+                            background: #fff;
+                            height: 2px;
+                            width: 0;
+                            transition: .3s;
+                        }
+                        &:hover {
+                            &::before {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    input[type="text"] {
+                        border-radius: 20px;
+                        border: 0;
+                        height: 40px;
+                        background-image: url("../images/search.png");
+                        background-size: 25px;
+                        background-repeat: no-repeat;
+                        background-position: top 10px left 10px;
+                        padding-left: 45px;
+                        padding-right: 20px;
+                        font-size: 18px;
+                    }
+                    .submenu {
+                        position: absolute;
+                        width: 170px;
+                        background: #fff;
+                        left: 0;
+                        top: 5px;
+                        padding: 17px 0;
+                        -webkit-transition: .3s;
+                        -moz-transition: .3s;
+                        -o-transition: .3s;
+                        transition: .3s;
+                        border-radius: 5px;
+                        display: none;
+                        li {
+                            margin: 0;
+                            display: block;
+                            padding: 10px;
+                            a {
+                                color: #000;
+                                display: block;
+                                &::before {
+                                    position: absolute;
+                                    content: "";
+                                    left: 0;
+                                    bottom: 0px;
+                                    background: #000;
+                                    height: 2px;
+                                    width: 0;
+                                    transition: .3s;
+                                }
+                                &:hover {
+                                    &::before {
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    &:hover,
+                    &:focus-within {
+                        .submenu {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        &.header {
+            .header-text,
+            .header-image {
+                width: 40%;
+                float: left;
+            }
+            .header-text {
+                h1 {
+                    font-size: 70px;
+                    color: #4c4d4f;
+                }
+                p {
+                    color: #a0a2a5;
+                    font-size: 16px;
+                    line-height: 31px;
+                }
+                a {
+                    display: inline-block;
+                    background: linear-gradient(90deg, rgba(255, 143, 79, 1) 0%, rgba(255, 143, 79, 1) 36%, rgba(244, 65, 72, 1) 100%);
+                    padding: 10px 100px 10px 100px;
+                    text-decoration: none;
+                    color: #fff;
+                    border-radius: 20px;
+                    font-size: 20px;
+                    margin-top: 30px;
+                    &:hover {
+                        background: rgb(244, 65, 72);
+                        background: linear-gradient(90deg, rgba(244, 65, 72, 1) 0%, rgba(255, 143, 79, 1) 49%, rgba(255, 143, 79, 1) 97%);
+                        transition: .3s;
+                    }
+                }
+            }
+            .header-image {
+                img {
+                    margin: 10% 5% 0% 50%;
+                    width: 79%;
+                }
+            }
+        }
+    }
+}
+
+.homepage-bg {
+    background-image: url("../images/bg.PNG");
+    background-size: 100%;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
