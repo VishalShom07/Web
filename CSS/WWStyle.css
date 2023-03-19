@@ -1,0 +1,64 @@
+html {
+    font-size: 62.5%;
+}
+
+div {
+    position: absolute;
+}
+
+.w1 {
+    width: 10rem;
+    height: 40rem;
+    margin-left: -10rem;
+    background-color: rgb(255, 174, 0);
+}
+
+.w2 {
+    width: 10rem;
+    height: 13rem;
+    margin-top: -10rem;
+    margin-left: -10rem;
+    background-color: rgb(255, 174, 0);
+}
+
+.w3 {
+    width: 76rem;
+    height: 10rem;
+    margin-top: -10rem;
+    margin-left: -10rem;
+    background-color: rgb(255, 174, 0);
+}
+
+.w4 {
+    width: 80rem;
+    height: 15rem;
+    margin-top: 30rem;
+    margin-left: -10rem;
+    background-color: rgb(255, 174, 0);
+}
+
+.w5 {
+    width: 60rem;
+    height: 55rem;
+    margin-top: -10rem;
+    margin-left: 65rem;
+    background-color: rgb(255, 174, 0);
+}
+
+@media(max-width:1000px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:800px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+@media(max-width:300px) {
+    html {
+        font-size: 30%;
+    }
+}
